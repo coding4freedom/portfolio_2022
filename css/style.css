@@ -1,0 +1,165 @@
+/* imports  */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-size: 16px;
+}
+span, p, h1, h2, h3{
+     font-family: 'Source Sans Pro', sans-serif;
+}
+h1 {
+     font-size: 2.8rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/* shared layout styles  */
+.about, .projects, .skills {
+     margin-left: 3rem;
+     margin-right: 10rem;
+}
+
+.wrapper {
+     display: flex;
+     
+}
+
+/* side layout */
+.side {
+     height: 1500px;
+     min-width: 30%;
+     max-width: 40%;
+     position: relative;
+     overflow-x: hidden;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: space-around;
+     align-items: flex-end;
+     padding-right: 3rem;
+}
+.side-top, .side-bot{
+     position: fixed;
+}
+.side-top {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     top: 0;
+     padding-top: 10%;
+}
+.side-top img {
+     width: 150px;
+     border-radius: 55%;
+     margin-bottom: 2rem;
+}
+.side-bot ul {
+     display: flex;
+     flex-direction: row;
+     gap: 2rem;
+}
+
+/*  main styles layout  */
+.main {
+     display: flex;
+     min-width: 50%;    
+}
+
+/*  about styles layout  */
+.about input {
+     margin-top: 3rem;
+     padding: 1rem 2rem;
+     border-radius: 5px;
+}
+
+/*  projects styles layout  */
+.projects {
+     margin-top: 3rem;
+}
+.proj-row {
+     display: flex;
+     gap: 5rem;
+}
+.cards {
+     display: flex;
+     flex-direction: column;
+}
+.card-img img {
+     height: auto;
+     width: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.side {
+     background: linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url("../assests/img/window.jpg");
+     background-size : cover;     
+}
+.side span {
+     color:#fff;
+     font-size: 1.8rem;
+     line-height: 1.7;
+}
+.side-bot ul {
+     list-style-type: none;     
+}
+.side-bot a {
+     text-decoration: none;
+}
+.side-bot i {
+     color:#fff;
+     font-size: 1.7rem;
+}
+/*  main styles   */
+
+
+/*  about styles   */
+.about {
+     margin-top: 8rem;
+     padding-bottom: 5rem;
+     border-bottom: 1px solid #D0D3D5;
+}
+.about h1, .about p {
+     line-height: 1.5;
+}
+.about input {
+     border: 2px solid lightgray;
+}
+
+/*  projects styles   */
+
+
+
+/*  skills styles  */
