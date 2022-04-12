@@ -74,7 +74,7 @@ main {
      align-items: flex-end;
      padding-right: 3rem;
 }
-.side-top, .side-bot{
+.side-top /*.side-bot*/{
      position: fixed;
 }
 .side-top {
@@ -83,11 +83,17 @@ main {
      align-items: flex-end;
      top: 0;
      padding-top: 10%;
+     padding-left: 2rem;
+     padding-right: 2rem;
 }
 .side-top img {
      width: 150px;
      border-radius: 55%;
      margin-bottom: 2rem;
+}
+.side-bot {
+     top: 0;
+     padding-top: 30%;
 }
 .side-bot ul {
      display: flex;
@@ -206,3 +212,25 @@ main {
 
 
 /*  skills styles  */
+
+/* 
+     Media queries
+*/
+
+@media all and (max-width: 1024px) {
+     .wrapper {
+          flex-direction: column;
+     }
+     .side {
+          position: initial;
+          min-width: 100%;
+          height: 30%;
+     }
+     .side-top {
+          position: initial;
+     }
+     .main {
+          width: 100vw;
+     }
+ }
+
