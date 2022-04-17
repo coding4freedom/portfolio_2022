@@ -74,9 +74,9 @@ main {
      align-items: flex-end;
      padding-right: 3rem;
 }
-.side-top /*.side-bot*/{
+ .side-top /*.side-bot*/{
      position: fixed;
-}
+} 
 .side-top {
      display: flex;
      flex-direction: column;
@@ -138,6 +138,7 @@ main {
 .card-img img {
      height: auto;
      width: 100%;
+     border-radius: 8px;
 }
 
 /*  skill styles layout  */
@@ -218,19 +219,44 @@ main {
 */
 
 @media all and (max-width: 1024px) {
+     h1 {
+          font-size: 2.2rem;
+     }
      .wrapper {
           flex-direction: column;
      }
+     .about, .projects, .skills {
+          margin-left: 5rem;
+          margin-right: 5rem;
+     } 
+                              /*  Side section  */
      .side {
           position: initial;
           min-width: 100%;
           height: 30%;
+          align-items: center;
      }
      .side-top {
           position: initial;
+          align-items: center;         
+     }     
+     /* .side-top img, .side-bot {
+         margin-left: 5rem;
+     } */
+     .side-bot {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
      }
+                              /* Main section */
      .main {
           width: 100vw;
+     }
+                              /* About section */
+     .about {
+          margin-top: 3rem;
+     }
+     .about p, .about span {
+          font-size: 1.3rem;
      }
  }
 
