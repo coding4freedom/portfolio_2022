@@ -33,10 +33,10 @@ span, p, h1, h2, h3{
      font-family: 'Source Sans Pro', sans-serif;
 }
 h1 {
-     font-size: 2.8rem;
+     font-size: 2rem;
 }
 h2 {
-     font-size: 2rem;
+     font-size: 1.8rem;
 }
 h3 {
      font-size: 1.5rem;
@@ -169,7 +169,7 @@ main {
 }
 .side span {
      color:#fff;
-     font-size: 1.8rem;
+     font-size: 1.35rem;
      line-height: 1.7;
 }
 .side-bot ul {
@@ -195,7 +195,7 @@ main {
 }
 .about p, .about span {     
      line-height: 2.5rem;
-     font-size: 1.5rem;
+     font-size: 1.2rem;
 }
 .about button {     
      border: 2px solid lightgray;
@@ -217,6 +217,14 @@ main {
 /* 
      Media queries
 */
+@media all and (max-width: 1554px){
+     .side-top{          
+          align-items: center;
+     }
+     .side span{
+          font-size: 1.35rem;
+     }
+}
 
 @media all and (max-width: 1024px) {
      h1 {
