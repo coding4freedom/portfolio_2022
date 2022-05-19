@@ -244,6 +244,9 @@ main {
           height: 30%;
           align-items: center;
      }
+     .side span {
+          font-size: 1.7rem;
+     }
      .side-top {
           position: initial;
           align-items: center;         
@@ -268,3 +271,24 @@ main {
      }
  }
 
+ @media all and (max-width: 509px) {
+     h1, .side span{
+          font-size: 1.4rem;
+     }
+     .about p, .about span {
+          font-size: 1rem;
+     }
+     h2 {
+          font-size: 1.6rem;
+     }
+     h3 {
+          font-size: 1.3rem;
+     }     
+     .proj-row{
+          flex-direction: column;
+          gap: 1rem;
+     }
+     .skill-row {
+          flex-direction: column;          
+     }
+ }
