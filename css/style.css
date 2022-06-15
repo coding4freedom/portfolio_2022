@@ -41,6 +41,9 @@ h2 {
 h3 {
      font-size: 1.5rem;
 }
+li {
+     font-weight: bold;
+}
 main {
      background-color: #587a59;
 }
@@ -217,7 +220,7 @@ main {
 /* 
      Media queries
 */
-@media all and (max-width: 1554px){
+@media all and (min-width: 1024px) and (max-width: 1554px){
      .side-top{          
           align-items: center;
      }
@@ -226,18 +229,18 @@ main {
      }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (min-width: 509px) and (max-width: 1024px) {
      h1 {
           font-size: 2.2rem;
      }
      .wrapper {
           flex-direction: column;
      }
-     .about, .projects, .skills {
+     main .about, .projects, .skills {
           margin-left: 5rem;
-          margin-right: 5rem;
+          margin-right: 3rem;
      } 
-                              /*  Side section  */
+     /*  Side section  */
      .side {
           position: initial;
           min-width: 100%;
@@ -272,6 +275,13 @@ main {
  }
 
  @media all and (max-width: 509px) {
+     .about, .projects, .skills {
+          margin-left: 1.3rem;
+          margin-right: 1.3rem;
+     }
+     .about {
+          padding-bottom: 2.5rem;
+     }
      h1, .side span{
           font-size: 1.4rem;
      }
