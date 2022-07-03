@@ -276,6 +276,14 @@ main {
  }
 
  @media all and (max-width: 509px) {
+     .wrapper {          
+          flex-direction: column;     
+     }
+     .side {
+          min-width: 100vw;
+          position: initial;
+          height: 300px;
+     }
      .about, .projects, .skills {
           margin-left: 1.3rem;
           margin-right: 1.3rem;
