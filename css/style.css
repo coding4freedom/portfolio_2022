@@ -279,10 +279,19 @@ main {
      .wrapper {          
           flex-direction: column;     
      }
-     .side {
+     .side {         
           min-width: 100vw;
           position: initial;
+          align-items: center;
           height: 300px;
+     }
+     .side-top {
+          position: static;
+          align-items: center;
+          padding: 0;
+     }
+     .side-bot {          
+          padding-top: 0;
      }
      .about, .projects, .skills {
           margin-left: 1.3rem;
